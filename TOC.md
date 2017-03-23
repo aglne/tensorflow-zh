@@ -3,17 +3,16 @@
   - [下载及安装](SOURCE/get_started/os_setup.md)
   - [基本用法](SOURCE/get_started/basic_usage.md)
 - 教程
-  - [Overview](SOURCE/tutorials/overview.md)
-  - [MNIST For ML Beginners](SOURCE/tutorials/mnist_beginners.md)
-  - [Deep MNIST for Expert](SOURCE/tutorials/mnist_pros.md)
-  - [TensorFlow Mechanics 101](SOURCE/tutorials/mnist_tf.md)
-  - [Convolutional Neural Networks](SOURCE/tutorials/deep_cnn.md)
-  - [Vector Representations of Words](SOURCE/tutorials/word2vec.md)
-  - [Vector Representations of Words](SOURCE/tutorials/word2vec.md)
-  - [Recurrent Neural Networks](SOURCE/tutorials/recurrent.md)
-  - [Mandelbrot Set](SOURCE/tutorials/mandelbrot.md)
-  - [Partial Differential Equations](SOURCE/tutorials/pdes.md) 
-  - [MNIST Data Download](SOURCE/tutorials/mnist_download.md)
+  - [总览](SOURCE/tutorials/overview.md)
+  - [MNIST 机器学习入门](SOURCE/tutorials/mnist_beginners.md)
+  - [深入 MNIST](SOURCE/tutorials/mnist_pros.md)
+  - [TensorFlow 运作方式入门](SOURCE/tutorials/mnist_tf.md)
+  - [卷积神经网络](SOURCE/tutorials/deep_cnn.md)
+  - [字词的向量表示](SOURCE/tutorials/word2vec.md)
+  - [递归神经网络](SOURCE/tutorials/recurrent.md)
+  - [曼德布洛特(Mandelbrot)集合](SOURCE/tutorials/mandelbrot.md)
+  - [偏微分方程](SOURCE/tutorials/pdes.md) 
+  - [MNIST数据下载](SOURCE/tutorials/mnist_download.md)
 - 运作方式
   - [总览](SOURCE/how_tos/overview.md) 
   - [变量:创建、初始化、保存和加载](SOURCE/how_tos/variables.md) 
@@ -32,7 +31,10 @@
   - [FAQ](SOURCE/resources/faq.md)
   - [术语表](SOURCE/resources/glossary.md)
   - [Tensor排名、形状和类型](SOURCE/resources/dims_types.md)
-
+- 其他
+  - [常见问题汇总](SOURCE/faq.md)
+  - [相关资源](SOURCE/resource.md)
+  - [个人学习心得](SOURCE/personal.md)
 
   
-  
+ 

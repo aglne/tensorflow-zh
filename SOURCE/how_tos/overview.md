@@ -1,92 +1,71 @@
-# Overview
+# 综述 Overview
 
+## Variables: 创建，初始化，保存，和恢复
 
-## Variables: Creation, Initializing, Saving, and Restoring
+TensorFlow Variables 是内存中的容纳 tensor 的缓存。这一小节介绍了用它们在模型训练时(during training)创建、保存和更新模型参数(model parameters) 的方法。
 
-TensorFlow Variables are in-memory buffers containing tensors.  Learn how to
-use them to hold and update model parameters during training.
+[参看教程](../how_tos/variables.md)
 
-[View Tutorial](../how_tos/variables/index.md)
+## TensorFlow 机制 101 
 
+用 MNIST 手写数字识别作为一个小例子，一步一步的将使用 TensorFlow 基础架构(infrastructure)训练大规模模型的细节做详细介绍。
 
-## TensorFlow Mechanics 101
+[参看教程](../tutorials/mnist_tf.md)
 
-A step-by-step walk through of the details of using TensorFlow infrastructure
-to train models at scale, using MNIST handwritten digit recognition as a toy
-example.
+## TensorBoard: 学习过程的可视化 
 
-[View Tutorial](../tutorials/mnist/tf/index.md)
+对模型进行训练和评估时，TensorBoard 是一个很有用的可视化工具。此教程解释了创建和运行 TensorBoard 的方法，和使用摘要操作(Summary ops)的方法，通过添加摘要操作(Summary ops)，可以自动把数据传输到 TensorBoard 所使用的事件文件。
 
+[参看教程](../how_tos/summaries_and_tensorboard.md)
 
-## TensorBoard: Visualizing Learning
+## TensorBoard: 图的可视化 
 
-TensorBoard is a useful tool for visualizing the training and evaluation of
-your model(s).  This tutorial describes how to build and run TensorBoard as well
-as how to add Summary ops to automatically output data to the Events files that
-TensorBoard uses for display.
+此教程介绍了在 TensorBoard 中使用可视化工具的方法，它可以帮助你理解张量流图的过程并 debug。
 
-[View Tutorial](../how_tos/summaries_and_tensorboard/index.md)
+[参看教程](../how_tos/graph_viz.md)
 
+## 数据读入 
 
-## TensorBoard: Graph Visualization
+此教程介绍了把数据传入 TensorSlow 程序的三种主要的方法： Feeding, Reading 和 Preloading.
 
-This tutorial describes how to use the graph visualizer in TensorBoard to help
-you understand the dataflow graph and debug it.
+[参看教程](../how_tos/reading_data.md)
 
-[View Tutorial](../how_tos/graph_viz/index.md)
+## 线程和队列 
 
+此教程介绍 TensorFlow 中为了更容易进行异步和并发训练的各种不同结构(constructs)。
 
-## Reading Data
+[参看教程](../how_tos/threading_and_queues.md)
 
-This tutorial describes the three main methods of getting data into your
-TensorFlow program: Feeding, Reading and Preloading.
+## 添加新的 Op 
 
-[View Tutorial](../how_tos/reading_data/index.md)
+TensorFlow 已经提供一整套节点操作(）operation)，你可以在你的 graph 中随意使用它们，不过这里有关于添加自定义操作(custom op)的细节。
 
+[参看教程](../how_tos/adding_an_op.md)。
 
-## Threading and Queues
+## 自定义数据的 Readers 
 
-This tutorial describes the various constructs implemented by TensorFlow
-to facilitate asynchronous and concurrent training.
+如果你有相当大量的自定义数据集合，可能你想要对 TensorFlow 的 Data Readers 进行扩展，使它能直接以数据自身的格式将其读入。
 
-[View Tutorial](../how_tos/threading_and_queues/index.md)
+[参看教程](../how_tos/new_data_formats.md)。
 
+## 使用 GPUs 
 
-## Adding a New Op
+此教程描述了用多个 GPU 构建和运行模型的方法。
 
-TensorFlow already has a large suite of node operations from which you can
-compose in your graph, but here are the details of how to add you own custom Op.
+[参看教程](../how_tos/using_gpu.md)
 
-[View Tutorial](../how_tos/adding_an_op/index.md)
+## 共享变量 Sharing Variables
 
+当在多 GPU 上部署大型的模型，或展开复杂的 LSTMs 或 RNNs 时，在模型构建代码的不同位置对许多相同的变量（Variable）进行读写常常是必须的。设计变量作用域（Variable Scope）机制的目的就是为了帮助上述任务的实现。
 
-## Custom Data Readers
+[参看教程](../how_tos/variable_scope/index.md)。
 
-If you have a sizable custom data set, you may want to consider extending
-TensorFlow to read your data directly in it's native format.  Here's how.
+原文： [How-to](http://tensorflow.org/how_tos/index.html) 
 
-[View Tutorial](../how_tos/new_data_formats/index.md)
+翻译：[Terence Cooper](https://github.com/TerenceCooper) 
 
-
-## Using GPUs
-
-This tutorial describes how to construct and execute models on GPU(s).
-
-[View Tutorial](../how_tos/using_gpu/index.md)
-
-
-## Sharing Variables
-
-When deploying large models on multiple GPUs, or when unrolling complex LSTMs
-or RNNs, it is often necessary to access the same Variable objects from
-different locations in the model construction code.
-
-The "Variable Scope" mechanism is designed to facilitate that.
-
-[View Tutorial](../how_tos/variable_scope/index.md)
-
+校对：[lonlonago](https://github.com/lonlonago)
 <div class='sections-order' style="display: none;">
-<!--
 <!-- variables/index.md -->
 <!-- ../tutorials/mnist/tf/index.md -->
 <!-- summaries_and_tensorboard/index.md -->
@@ -97,6 +76,5 @@ The "Variable Scope" mechanism is designed to facilitate that.
 <!-- new_data_formats/index.md -->
 <!-- using_gpu/index.md -->
 <!-- variable_scope/index.md -->
--->
 </div>
 
